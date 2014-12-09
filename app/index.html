@@ -23,6 +23,11 @@
 
 
     <div class="container">
+      <p>名前：<input data-bind="value: name, valueUpdate: 'afterkeydown'"></p>
+      <p>年齢：<input data-bind="value: age, valueUpdate: 'afterkeydown'"></p>
+      <p>あなたは <span data-bind="text: name"></span> さん、<span data-bind="text: age"></span> 歳 ですね！</p>
+
+      <!--
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
@@ -55,7 +60,7 @@
       <div class="footer">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
-
+-->
     </div>
 
 
@@ -67,6 +72,7 @@
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -75,6 +81,7 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+-->
 
         <!-- build:js(.) scripts/plugins.js -->
         <script src="bower_components/bootstrap/js/affix.js"></script>
